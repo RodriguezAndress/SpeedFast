@@ -1,3 +1,4 @@
-✅ Semana formativa 1. 
+🛵 SpeedFast. 
 
-📌Haciendo uso de la herencia, sobrecarga, sobreescritura y polimorfismo en el Main.
+📌SpeedFast, aplicación gestora de envios, en su estructura se hace:
+Uso de la herencia, sobrecarga, sobreescritura y polimorfismo.
