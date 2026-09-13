@@ -4,21 +4,22 @@ import duoc.cl.servicio.Pedido;
 import duoc.cl.interfaces.IDespachable;
 import duoc.cl.interfaces.IEstadoPedido;
 import duoc.cl.interfaces.IRastreable;
+import duoc.cl.servicio.CondicionPedido;
 
 public class PedidoEncomienda extends Pedido implements IEstadoPedido, IDespachable, IRastreable {
     private double peso;
     private double volumen;
 
-    public PedidoEncomienda(int idCliente, int idPedido, String cliente, String direccion, double distanciaKm, double peso, double volumen) {
-        super(idCliente, idPedido, cliente, direccion, distanciaKm);
+    public PedidoEncomienda(int idCliente, int idPedido, String cliente, String direccionEntrega, double distanciaKm, CondicionPedido condicionPedido, double peso, double volumen) {
+        super(idCliente, idPedido, cliente, direccionEntrega, distanciaKm, condicionPedido);
         this.peso = peso;
         this.volumen = volumen;
     }
     //Constructor sobrecarga con solo tres parametros para arrays sem 2 y 3
 
 
-    public PedidoEncomienda(int idPedido, String direccion, double distanciaKm) {
-        this(0, idPedido, "", direccion, distanciaKm, 0, 0);
+    public PedidoEncomienda(int idPedido, String direccionEntrega, double distanciaKm) {
+        this(0, idPedido, "", direccionEntrega, distanciaKm, CondicionPedido.PENDIENTE,0, 0);
     }
 
     public double getPeso() {return peso;}

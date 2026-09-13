@@ -11,19 +11,19 @@ public class GestorPedidos {
     public static List<Pedido> pedidosSem1() {
         List<Pedido> pedidos = new ArrayList<>();
 
-        PedidoComida pedidoCom = new PedidoComida(2353, 0, "Juan José", "Sta Rosa 77", 1.5, "Rosticeria", 45);
+        PedidoComida pedidoCom = new PedidoComida(2353, 0, "Juan José", "Sta Rosa 77", 1.5, CondicionPedido.PENDIENTE,"Rosticeria",45);
         pedidoCom.estadoPedido(true);
         pedidoCom.estadoPedido();
         pedidos.add(pedidoCom);
 
         System.out.println("\n ~Encomienda");
-        PedidoEncomienda pedidoEnco = new PedidoEncomienda(9632, 0, "Patrica Baez", "Procuro 400", 2.5, 5, 30);
+        PedidoEncomienda pedidoEnco = new PedidoEncomienda(9632, 0, "Patrica Baez", "Procuro 400", 2.5, CondicionPedido.PENDIENTE, 5, 30);
         pedidoEnco.estadoPedido(true);
         pedidoEnco.estadoPedido();
         pedidos.add(pedidoEnco);
 
         System.out.println("\n ~Pedido Express");
-        PedidoExpress pedidoExp = new PedidoExpress(2582, 0, "Siena Paez", "Francisco 699", 1.2, "Oxxo");
+        PedidoExpress pedidoExp = new PedidoExpress(2582, 0, "Siena Paez", "Francisco 699", 1.2, CondicionPedido.PENDIENTE,"Oxxo");
         pedidoExp.estadoPedido(15);
         pedidoExp.estadoPedido();
         pedidos.add(pedidoExp);
@@ -94,5 +94,16 @@ public class GestorPedidos {
         System.out.println("Todos los repartidores han finalizado sus entregas.");
 
 
+    }
+    public static ZonaDeCarga datosZonaDeCarga(){
+        ZonaDeCarga zonaDeCarga = new ZonaDeCarga();
+
+        zonaDeCarga.agregarPedido(new PedidoComida(301, "Salesianos 105",4.2));
+        zonaDeCarga.agregarPedido(new PedidoExpress(507, "Makena 100", 5.2));
+        zonaDeCarga.agregarPedido(new PedidoEncomienda(508, "Barcelona 10", 3.1));
+        zonaDeCarga.agregarPedido(new PedidoComida(509,"Salvador 17", 5.5));
+        zonaDeCarga.agregarPedido(new PedidoExpress(510, "Sta Victoria 55", 1.9));
+
+        return zonaDeCarga;
     }
 }

@@ -4,20 +4,21 @@ import duoc.cl.interfaces.ICancelable;
 import duoc.cl.interfaces.IEstadoPedido;
 import duoc.cl.interfaces.IRastreable;
 import duoc.cl.servicio.Pedido;
+import duoc.cl.servicio.CondicionPedido;
 
 public class PedidoComida extends Pedido implements IEstadoPedido, ICancelable, IRastreable {
     private String restaurante;
     private int tiempoPreparacion;
 
-    public PedidoComida(int idCliente, int idPedido, String cliente, String direccion, double distanciaKm, String restaurante, int tiempoPreparacion) {
-        super(idCliente, idPedido, cliente, direccion, distanciaKm);
+    public PedidoComida(int idCliente, int idPedido, String cliente, String direccionEntrega, double distanciaKm, CondicionPedido condicionPedido, String restaurante, int tiempoPreparacion) {
+        super(idCliente, idPedido, cliente, direccionEntrega, distanciaKm, condicionPedido);
         this.restaurante = restaurante;
         this.tiempoPreparacion = tiempoPreparacion;
     }
     //Constructor sobrecarga de tres parametros arrays sem 2 y 3
 
-    public PedidoComida(int idPedido, String direccion, double distanciaKm) {
-        this(0, idPedido, "", direccion, distanciaKm, "", 0);
+    public PedidoComida(int idPedido, String direccionEntrega, double distanciaKm) {
+        this(0, idPedido, "", direccionEntrega, distanciaKm, CondicionPedido.PENDIENTE,"", 0);
     }
 
     public String getRestaurante() {return restaurante;}
@@ -62,6 +63,5 @@ public class PedidoComida extends Pedido implements IEstadoPedido, ICancelable, 
         System.out.println("\n Historial:");
         System.out.println(getClass().getSimpleName() + " #" + idPedido + " Cancelado ");
     }
-
 }
 

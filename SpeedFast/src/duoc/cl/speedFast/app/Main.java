@@ -1,9 +1,6 @@
 package duoc.cl.speedFast.app;
 
-import duoc.cl.speedFast.model.Pedido;
 import duoc.cl.speedFast.model.PedidoComida;
-import duoc.cl.speedFast.model.PedidoEncomienda;
-import duoc.cl.speedFast.model.PedidoExpress;
 
 import java.util.ArrayList;
 import java.util.List;

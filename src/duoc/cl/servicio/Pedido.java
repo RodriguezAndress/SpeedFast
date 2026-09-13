@@ -1,21 +1,21 @@
 package duoc.cl.servicio;
 
 
-import duoc.cl.interfaces.IEstadoPedido;
-
-public abstract class Pedido implements IEstadoPedido {
+public abstract class Pedido implements Comparable<Pedido> {
     protected int idCliente;
     protected int idPedido;
     protected String cliente;
-    protected String direccion;
+    protected String direccionEntrega;
     protected double distanciaKm;
+    protected CondicionPedido condicionPedido;
 
-    public Pedido(int idCliente, int idPedido, String cliente, String direccion, double distanciaKm) {
+    public Pedido(int idCliente, int idPedido, String cliente, String direccionEntrega, double distanciaKm,  CondicionPedido condicionPedido) {
         this.idCliente = idCliente;
         this.idPedido = idPedido;
         this.cliente = cliente;
-        this.direccion = direccion;
+        this.direccionEntrega = direccionEntrega;
         this.distanciaKm = distanciaKm;
+        this.condicionPedido = condicionPedido;
     }
     public Pedido(int idPedido){
         if(idPedido <= 0){
@@ -25,11 +25,17 @@ public abstract class Pedido implements IEstadoPedido {
     }
 
     public int getIdPedido() {return idPedido;}
+    public String getDireccionEntrega() {return direccionEntrega;}
+
+    //Cambio el nombre de Estado-EstadoPedido por CondicionPedido porque el nombre anterior ya lo estaba ocupando
+    public CondicionPedido getCondicionPedido() {return condicionPedido;}
+    public void setCondicionPedido(CondicionPedido condicionPedido) {this.condicionPedido = condicionPedido;}
+
 
     public void mostrarResumen() {
         System.out.println("\n" + getClass().getSimpleName());
         System.out.println(getClass().getSimpleName() + " " + idPedido);
-        System.out.println("Direccion: " + direccion);
+        System.out.println("Direccion: " + direccionEntrega);
         System.out.println("Distancia: " + distanciaKm + ("Km"));
         System.out.println("Repartidor asignado: " + asignarRepartidor());
         System.out.println("Su pedido llegará en: " + calcularTiempoEntrega() +(" Min.") );
@@ -39,9 +45,14 @@ public abstract class Pedido implements IEstadoPedido {
     public abstract String asignarRepartidor();
 
     @Override
+    public int compareTo(Pedido other) {
+        return this.condicionPedido.ordinal() - other.condicionPedido.ordinal() ;
+    }
+
+    /*@Override
     public void estadoPedido() {
         System.out.println("Asignando Repartidor...");
-    }
+    }*/
 
 }
 

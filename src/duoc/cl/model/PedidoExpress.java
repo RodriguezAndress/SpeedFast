@@ -4,20 +4,21 @@ import duoc.cl.servicio.Pedido;
 import duoc.cl.interfaces.IDespachable;
 import duoc.cl.interfaces.IEstadoPedido;
 import duoc.cl.interfaces.IRastreable;
+import duoc.cl.servicio.CondicionPedido;
 
 public class PedidoExpress extends Pedido implements IEstadoPedido, IDespachable, IRastreable {
     private String tienda;
 
 
-    public PedidoExpress(int idCliente, int idPedido, String cliente, String direccion, double distanciaKm, String tienda) {
-        super(idCliente, idPedido, cliente, direccion, distanciaKm);
+    public PedidoExpress(int idCliente, int idPedido, String cliente, String direccionEntrega, double distanciaKm, CondicionPedido condicionPedido, String tienda) {
+        super(idCliente, idPedido, cliente, direccionEntrega, distanciaKm, condicionPedido);
         this.tienda = tienda;
     }
     //Constructor sobrecarga con solo tres parametros para sem 2 y 3
 
 
-    public PedidoExpress(int idPedido, String direccion, double distanciaKm) {
-        this(0, idPedido, "", direccion, distanciaKm, "");
+    public PedidoExpress( int idPedido, String direccionEntrega, double distanciaKm) {
+        this(0, idPedido, " ", direccionEntrega, distanciaKm, CondicionPedido.PENDIENTE,"");
     }
 
     public String getTienda() {return tienda;}
