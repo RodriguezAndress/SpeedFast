@@ -106,4 +106,17 @@ public class GestorPedidos {
 
         return zonaDeCarga;
     }
+
+    public static List<Pedido> pedidosTablaInterfaz(){
+        List<Pedido> pedidosInterfaz = new ArrayList<>();
+
+        pedidosInterfaz.add(new PedidoComida(301, "Salesianos 105",4.2));
+        pedidosInterfaz.add(new PedidoExpress(507, "Makena 100", 5.2));
+        pedidosInterfaz.add(new PedidoEncomienda(508, "Barcelona 10", 3.1));
+        pedidosInterfaz.add(new PedidoComida(509,"Salvador 17", 5.5));
+        pedidosInterfaz.add(new PedidoExpress(510, "Makena 100", 5.2));
+
+        return pedidosInterfaz;
+    }
+
 }

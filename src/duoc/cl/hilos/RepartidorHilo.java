@@ -20,12 +20,12 @@ public class RepartidorHilo implements Runnable{
             while ((pedido = zonaDeCarga.retirarPedido()) != null){
                 System.out.println("[Repartidor " + nombre + " ] Retirando pedido # " + pedido.getIdPedido() + "...");
 
-                pedido.setCondicionPedido(CondicionPedido.EN_REPARTO);
+                pedido.setPrioridad(CondicionPedido.EN_REPARTO);
                 System.out.println("[Repartidor " + nombre + " ] Entregando pedido # " + pedido.getIdPedido() + "...");
 
                 Thread.sleep((long) (Math.random() * 2000) + 1000);
 
-                pedido.setCondicionPedido(CondicionPedido.ENTREGADO);
+                pedido.setPrioridad(CondicionPedido.ENTREGADO);
                 System.out.println("[Repartidor " + nombre + " ] pedido # " + pedido.getIdPedido() + " entregado ✓");
             }
 

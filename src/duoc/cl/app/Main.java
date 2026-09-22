@@ -1,13 +1,18 @@
+import duoc.cl.controlador.PedidoControlador;
 import duoc.cl.servicio.GestorPedidos;
+import duoc.cl.servicio.Pedido;
 import duoc.cl.servicio.ZonaDeCarga;
 import duoc.cl.hilos.RepartidorHilo;
+import duoc.cl.vista.VentanaPrincipal;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
 
        /* System.out.println("...~~~ SpeedFast ~~~.....:::Sem1:::..");
         System.out.println("**** Sobrescritura y sobrecarga ****");
@@ -33,7 +38,10 @@ public class Main {
 
         GestorPedidos.pedidoSem4();*/
 
+       /*
+        //Semana5
         ZonaDeCarga zonaDeCarga = GestorPedidos.datosZonaDeCarga();
+
 
         ExecutorService executor = Executors.newFixedThreadPool(3);
 
@@ -46,7 +54,11 @@ public class Main {
 
         System.out.println("Todos los pedidos han sido entregados correctamente.");
 
-        }
+        }*/
 
+        //Semana6
+        PedidoControlador controlador = new PedidoControlador();
+        new VentanaPrincipal(controlador);
 
+    }
 }

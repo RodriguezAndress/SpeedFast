@@ -29,7 +29,7 @@ public abstract class Pedido implements Comparable<Pedido> {
 
     //Cambio el nombre de Estado-EstadoPedido por CondicionPedido porque el nombre anterior ya lo estaba ocupando
     public CondicionPedido getCondicionPedido() {return condicionPedido;}
-    public void setCondicionPedido(CondicionPedido condicionPedido) {this.condicionPedido = condicionPedido;}
+    public void setPrioridad(CondicionPedido condicionPedido) {this.condicionPedido = condicionPedido;}
 
 
     public void mostrarResumen() {
@@ -49,10 +49,9 @@ public abstract class Pedido implements Comparable<Pedido> {
         return this.condicionPedido.ordinal() - other.condicionPedido.ordinal() ;
     }
 
-    /*@Override
-    public void estadoPedido() {
-        System.out.println("Asignando Repartidor...");
-    }*/
-
+    @Override
+    public String toString() {
+        return "#" + idPedido + " — " + direccionEntrega;
+    }
 }
 
