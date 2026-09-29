@@ -3,9 +3,7 @@ package duoc.cl.controlador;
 import duoc.cl.servicio.CondicionPedido;
 import duoc.cl.servicio.GestorPedidos;
 import duoc.cl.servicio.Pedido;
-import duoc.cl.vista.TablaPedidos;
 
-import java.awt.*;
 import java.util.List;
 
 public class PedidoControlador {

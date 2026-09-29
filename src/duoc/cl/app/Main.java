@@ -1,15 +1,10 @@
+package duoc.cl.app;
+
 import duoc.cl.controlador.PedidoControlador;
-import duoc.cl.servicio.GestorPedidos;
-import duoc.cl.servicio.Pedido;
-import duoc.cl.servicio.ZonaDeCarga;
-import duoc.cl.hilos.RepartidorHilo;
+import duoc.cl.vista.VentanaDB;
 import duoc.cl.vista.VentanaPrincipal;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -57,8 +52,11 @@ public class Main {
         }*/
 
         //Semana6
-        PedidoControlador controlador = new PedidoControlador();
-        new VentanaPrincipal(controlador);
+        /*PedidoControlador controlador = new PedidoControlador();
+        new VentanaPrincipal(controlador);*/
+
+        //Semana 7
+        SwingUtilities.invokeLater(() -> new VentanaDB().setVisible(true));
 
     }
 }
