@@ -5,42 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3159359e-c9ee-48e4-b876-58e14f15cd05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/duoc/cl/conexion/ConexionDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/duoc/cl/dao/EntregaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/duoc/cl/dao/PedidoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/duoc/cl/dao/RepartidorDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/duoc/cl/vista/VentanaDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/duoc/cl/servicio/RepartidorServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/duoc/cl/vista/PanelEntrega.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/duoc/cl/vista/PanelPedidos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/duoc/cl/vista/PanelRepartidor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/SpeedFast.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/src/duoc/cl/speedFast/interfaces/ICancelable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/src/duoc/cl/speedFast/interfaces/IDespachable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/src/duoc/cl/speedFast/interfaces/IEstadoPedido.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/src/duoc/cl/speedFast/interfaces/IRastreable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/src/duoc/cl/speedFast/model/PedidoComida.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana3/src/duoc/cl/speedFast/servicio/Pedido.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/SpeedFast.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/out/production/SpeedFast/duoc/cl/speedFast/app/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/out/production/SpeedFast/duoc/cl/speedFast/interfaces/IRepartidor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/out/production/SpeedFast/duoc/cl/speedFast/model/Pedido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/out/production/SpeedFast/duoc/cl/speedFast/model/PedidoComida.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/out/production/SpeedFast/duoc/cl/speedFast/model/PedidoEncomienda.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/out/production/SpeedFast/duoc/cl/speedFast/model/PedidoExpress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/src/duoc/cl/speedFast/app/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/src/duoc/cl/speedFast/interfaces/IRepartidor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/src/duoc/cl/speedFast/model/PedidoComida.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/src/duoc/cl/speedFast/model/PedidoEncomienda.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedFast/src/duoc/cl/speedFast/model/PedidoExpress.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/duoc/cl/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/duoc/cl/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/duoc/cl/controlador/PedidoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/duoc/cl/controlador/PedidoControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/duoc/cl/dao/EntregaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/duoc/cl/dao/EntregaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/duoc/cl/dao/PedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/duoc/cl/dao/PedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/duoc/cl/dao/RepartidorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/duoc/cl/dao/RepartidorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/duoc/cl/vista/VentanaDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/duoc/cl/vista/VentanaDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +26,7 @@
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="27" />
+    <option name="cachedIndexableFilesCount" value="51" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.1440238459953142E-54" />
-      <entry key="MS500" value="1.628122264862337E-11" />
-      <entry key="S2" value="0.0020087308701335327" />
-      <entry key="S5" value="0.08340050906904077" />
-      <entry key="S10" value="0.2887914629434893" />
-      <entry key="S30" value="0.6609898393063942" />
-      <entry key="S60" value="0.8130129038697547" />
-      <entry key="M2" value="0.9027200774114512" />
-      <entry key="M5" value="1.326302786782454" />
-      <entry key="M10" value="3.7895743709306275" />
-      <entry key="M15" value="6.919135509174079" />
-      <entry key="M30" value="20.061952286976883" />
-      <entry key="H1" value="64.0073583243522" />
-      <entry key="H2" value="177.8230047434098" />
-      <entry key="H4" value="399.93065452413" />
-      <entry key="D1" value="1158.7719948793622" />
-      <entry key="W1" value="1479.948706773403" />
+      <entry key="MS100" value="8.93384329346254E-10" />
+      <entry key="MS500" value="0.015495573917785827" />
+      <entry key="S2" value="0.35281896085217307" />
+      <entry key="S5" value="0.6592054156989847" />
+      <entry key="S10" value="0.8119258110221217" />
+      <entry key="S30" value="0.9691155431810433" />
+      <entry key="S60" value="1.3235282886172006" />
+      <entry key="M2" value="3.0077931908903377" />
+      <entry key="M5" value="9.768600715960982" />
+      <entry key="M10" value="17.06153877294172" />
+      <entry key="M15" value="22.460426805927288" />
+      <entry key="M30" value="43.22597871715788" />
+      <entry key="H1" value="98.4483611122371" />
+      <entry key="H2" value="212.64486521678472" />
+      <entry key="H4" value="436.02004730863774" />
+      <entry key="D1" value="1404.4326130120744" />
+      <entry key="W1" value="1890.9717033522245" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0000000000182794" />
-      <entry key="M2" value="1.0000042754271654" />
-      <entry key="M5" value="1.0071199412189475" />
-      <entry key="M10" value="1.0873471137513342" />
-      <entry key="M15" value="1.235921219613986" />
-      <entry key="M30" value="2.711284962665605" />
-      <entry key="H1" value="15.225669273735644" />
-      <entry key="H2" value="61.92577584621873" />
-      <entry key="H4" value="155.89155964018715" />
-      <entry key="D1" value="463.75291186275" />
-      <entry key="W1" value="591.2784513912671" />
+      <entry key="S5" value="1.0000000001578846" />
+      <entry key="S10" value="1.0000153932951832" />
+      <entry key="S30" value="1.0380610837313944" />
+      <entry key="S60" value="1.3021407789257093" />
+      <entry key="M2" value="2.1201055250088325" />
+      <entry key="M5" value="4.535791514785497" />
+      <entry key="M10" value="7.204327834381299" />
+      <entry key="M15" value="9.642878728976587" />
+      <entry key="M30" value="19.87165733084479" />
+      <entry key="H1" value="45.13498131812895" />
+      <entry key="H2" value="91.37567569335029" />
+      <entry key="H4" value="178.87983572637737" />
+      <entry key="D1" value="561.6963262583482" />
+      <entry key="W1" value="753.4626734300645" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1199983945059917E-7" />
-      <entry key="MS500" value="0.04072334843082741" />
-      <entry key="S2" value="0.45112882071966326" />
-      <entry key="S5" value="0.8077639404183485" />
-      <entry key="S10" value="1.1379075499358802" />
-      <entry key="S30" value="1.6067518576445696" />
-      <entry key="S60" value="1.7852832894815143" />
-      <entry key="M2" value="1.888687092174889" />
-      <entry key="M5" value="2.3269687156314296" />
-      <entry key="M10" value="4.871202439712988" />
-      <entry key="M15" value="8.148933473307299" />
-      <entry key="M30" value="22.764135154133108" />
-      <entry key="H1" value="79.21239116093525" />
-      <entry key="H2" value="239.71108929502773" />
-      <entry key="H4" value="555.7767257664907" />
-      <entry key="D1" value="1622.5034467265598" />
-      <entry key="W1" value="2071.2232921337527" />
+      <entry key="MS100" value="1.1152389611211992E-9" />
+      <entry key="MS500" value="0.016603395887912837" />
+      <entry key="S2" value="0.49860971710269736" />
+      <entry key="S5" value="1.1200030838018833" />
+      <entry key="S10" value="1.4904007600230929" />
+      <entry key="S30" value="1.8840848534135555" />
+      <entry key="S60" value="2.553904320449824" />
+      <entry key="M2" value="5.069514159206681" />
+      <entry key="M5" value="14.247190957420957" />
+      <entry key="M10" value="24.21794421076915" />
+      <entry key="M15" value="32.0602643051851" />
+      <entry key="M30" value="63.054058061561456" />
+      <entry key="H1" value="143.53444672483673" />
+      <entry key="H2" value="303.97077096479524" />
+      <entry key="H4" value="614.850470395014" />
+      <entry key="D1" value="1966.1032077142625" />
+      <entry key="W1" value="2644.429477030888" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -227,7 +200,11 @@
       <workItem from="1790517248803" duration="3076000" />
       <workItem from="1790638258114" duration="2589000" />
       <workItem from="1790640893118" duration="8777000" />
-      <workItem from="1790651177561" duration="6904000" />
+      <workItem from="1790651177561" duration="7859000" />
+      <workItem from="1790894514972" duration="2797000" />
+      <workItem from="1790975054478" duration="8370000" />
+      <workItem from="1791061999808" duration="7957000" />
+      <workItem from="1791143926287" duration="4830000" />
     </task>
     <servers />
   </component>
